@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question No: 3</title>
     <link rel="stylesheet" href="Q3.css" type="text/css">
+    <script src="Q3.js"></script>
 </head>
 <body>
-    <form action="http://www.example.com/upload.php" method="POST">
+    <form action="http://www.example.com/upload.php"  name="dataForm" onsubmit="return inputValidation()" method="POST">
         
         <h3>Personal Data</h3>
         
@@ -37,31 +38,51 @@
             <label for="female" style="width: 50px;">Female</label>
         </div>
 
-        
-
-
         <div>
-            <label for="cpi">Average CPI: </label>
-            <input type="number" name="CPI" id="cpi">
+                <label for="country">Country</label>      
+                <select  name="country" id="country">
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Canada">Canada</option>
+                    <option value="China">China</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                    <option value="India">India</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                    <option value="Iraq">Iraq</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Turkmenistan">Turkmenistan</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="United States">United States</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                </select>
+            </div>
 
-            <label for="semester" style="width: 30px;">Upto: </label>
-            <input type="number" name="semester" id="semester" min="1" max="8">
-            <label for="semester" style="width: 100px;">Th Semester </label> 
-        </div>
-        <br />
+            <div>
+                <label for="address" style="width: 25px; margin-left: 110px;">Address:</label>
+                <textarea name="address" id="address" cols="50" rows="10"></textarea>
+            </div>
 
-        <div>
-            <label for="experience">Experience: </label>
-            <input type="number" name="experience" id="experience">
-            <label for="semester"  style="width: 50px;">Years </label>
-        </div>
-        <br />
-        
-        <div>
-            <label for="website">Your Website Or Blog:</label>
-            <input type="text" name="website" id="website" placeholder="http://">   
-        </div>    
-    </fieldset>
+            <div>
+                <label for="agree"></label>
+                <input type="checkbox" id="agree" name="agreement" value="agree"> I accept the agreement
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
     </form>
 </body>
 </html>
