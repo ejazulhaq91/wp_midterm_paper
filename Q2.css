@@ -1,0 +1,41 @@
+form{
+    max-width: 650px;
+    min-width: 400px;
+    background-color: cornflowerblue;
+    margin: 25px auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    
+}
+
+div{
+    margin-bottom: 15px;
+}
+
+label{
+    width: 175px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 15px;
+}
+
+div input{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 20px auto 20px auto;
+    height: 20px;
+}
+
+div select{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 20px auto 20px auto;
+    height: 20px;
+}
+
+
+
+

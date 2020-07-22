@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question No: 3</title>
+    <link rel="stylesheet" href="Q3.css" type="text/css">
+</head>
+<body>
+    <form action="http://www.example.com/upload.php" method="POST">
+        
+        <h3>Personal Data</h3>
+        
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+        </div>
+        <br />
+
+        <div>
+            <label for="pwd">Password: </label>
+            <input type="password" name="password" id="pwd">
+        </div> 
+        <br />
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email">
+        </div> 
+        <br />
+
+        <div>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male"  id="male">
+            <label for="male" style="width: 50px;">Male</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female" style="width: 50px;">Female</label>
+        </div>
+
+        
+
+
+        <div>
+            <label for="cpi">Average CPI: </label>
+            <input type="number" name="CPI" id="cpi">
+
+            <label for="semester" style="width: 30px;">Upto: </label>
+            <input type="number" name="semester" id="semester" min="1" max="8">
+            <label for="semester" style="width: 100px;">Th Semester </label> 
+        </div>
+        <br />
+
+        <div>
+            <label for="experience">Experience: </label>
+            <input type="number" name="experience" id="experience">
+            <label for="semester"  style="width: 50px;">Years </label>
+        </div>
+        <br />
+        
+        <div>
+            <label for="website">Your Website Or Blog:</label>
+            <input type="text" name="website" id="website" placeholder="http://">   
+        </div>    
+    </fieldset>
+    </form>
+</body>
+</html>

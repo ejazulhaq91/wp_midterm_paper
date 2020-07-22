@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question No: 2</title>
+    <link rel="stylesheet" href="Q2.css" type="text/css">
+</head>
+<body>
+    <form action="http://www.example.com/upload.php">
+        <fieldset>
+            <legend>Registration Details</legend>
+        
+        <div>
+            <label for="university">University: </label>
+            <input type="text" name="university" id="university">
+        </div>
+        <br />
+
+        <div>
+            <label for="institute">Institute: </label>
+            <input type="text" name="university" id="institute">
+        </div> 
+        <br />
+
+        <div>
+            <label for="branch">Branch:</label>
+            <select name="branches" id="branch">
+            <option value="select">--select--</option>
+            <option value="islamabad">Islamabad</option>
+            <option value="karachi">Karachi</option>
+            <option value="lahore">Lahore</option>
+            <option value="peshawar">Peshawar</option>
+            </select>
+        </div>
+        <br />
+
+        <div>
+            <label for="degree">Degree:</label>
+            <select name="degree" id="degree">
+            <option value="select">--select--</option>
+            <option value="BS">BS</option>
+            <option value="MS">MS</option>
+            <option value="Phd">Phd</option>
+            <option value="Post Doc">Post Doc</option>
+            </select>
+
+            <input type="radio" name="completion" value="persuing" id="persuing">
+            <label for="persuing" style="width: 50px;">Persuing</label>
+            <input type="radio" name="completion" value="completed" id="completed" >
+            <label for="completed" style="width: 50px;">Completed</label>
+        </div>
+
+
+        <div>
+            <label for="cpi">Average CPI: </label>
+            <input type="number" name="CPI" id="cpi">
+
+            <label for="semester" style="width: 30px;">Upto: </label>
+            <input type="number" name="semester" id="semester" min="1" max="8">
+            <label for="semester" style="width: 100px;">Th Semester </label> 
+        </div>
+        <br />
+
+        <div>
+            <label for="experience">Experience: </label>
+            <input type="number" name="experience" id="experience">
+            <label for="semester"  style="width: 50px;">Years </label>
+        </div>
+        <br />
+        
+        <div>
+            <label for="website">Your Website Or Blog:</label>
+            <input type="text" name="website" id="website" placeholder="http://">   
+        </div>    
+    </fieldset>
+    </form>
+</body>
+</html>
